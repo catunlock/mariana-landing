@@ -352,7 +352,9 @@
   updateBag();
 
   // ---------------- Salida ----------------
-  $("#x-be").href = M.contacto.behance;
+  // Enlace a Behance: solo si hay un perfil puesto en data.js.
+  if (M.contacto.behance) $("#x-be").href = M.contacto.behance;
+  else { $("#x-be").remove(); $(".salida-grid").classList.add("is-solo"); }
 
   // ---------------- Noche en el museo ----------------
   function noche() {

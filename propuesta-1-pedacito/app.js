@@ -698,7 +698,9 @@
     .join("");
 
   // ---------------- Contacto ----------------
-  $("#c-be").href = M.contacto.behance;
+  // Enlace a Behance: solo si hay un perfil puesto en data.js.
+  if (M.contacto.behance) $("#c-be").href = M.contacto.behance;
+  else $("#c-be").remove();
 
   // ---------------- Teléfono de disco ----------------
   (function rotary() {

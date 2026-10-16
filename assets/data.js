@@ -23,8 +23,8 @@ window.MARIANA = {
     // Correo profesional del dominio propio (p. ej. "hola@marianadiaz.design"). Si se rellena, aparece
     // como alternativa bajo el formulario. No poner aquí correos personales (Gmail, etc.).
     emailPublico: "hola@marianadiaz.site",
-    // TODO: poner aquí la URL real de su perfil de Behance (y de Instagram si quiere mostrarlo)
-    behance: "https://www.behance.net/",
+    // URL de su perfil de Behance (p. ej. "https://www.behance.net/usuario"). Si está vacío, el enlace no aparece.
+    behance: "",
     instagram: "",
   },
   software: ["Illustrator", "Photoshop", "InDesign", "After Effects", "Blender", "Corel Draw"],

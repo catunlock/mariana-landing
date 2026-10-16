@@ -23,6 +23,8 @@ cp -R assets/img assets/og dist/assets/
 for f in dist/index.html dist/app.js dist/styles.css; do
   sed -i.bak 's#\.\./assets/#assets/#g' "$f" && rm -f "$f.bak"
 done
+# …y su dirección canónica pasa de https://marianadiaz.site/<carpeta>/ a https://marianadiaz.site/
+sed -i.bak "s#https://marianadiaz.site/$src/#https://marianadiaz.site/#g" dist/index.html && rm -f dist/index.html.bak
 
 # Comprobaciones de seguridad antes de subir nada
 # (patrones genéricos: cualquier móvil venezolano o correo de Gmail/Hotmail/Yahoo/Outlook)
