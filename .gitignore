@@ -1,0 +1,14 @@
+# Contiene su teléfono y su correo personal: nunca debe subirse
+portfolio.pdf
+*.pdf
+
+# Propuesta que no entra en el repositorio
+propuesta-2-carta-de-color/
+assets/og/propuesta-2.jpg
+assets/previews/h2*.webp
+
+# Carpeta generada por publicar.sh
+dist/
+
+# Notas internas (solo en local)
+NOTAS.md

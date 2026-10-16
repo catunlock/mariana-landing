@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Propuestas · Mariana Díaz</title>
+  <meta name="description" content="Dos propuestas de web para Mariana Díaz, diseñadora gráfica.">
+  <meta property="og:title" content="Dos propuestas de web para Mariana Díaz">
+  <meta property="og:description" content="Un pedacito de mí y Sala MD: dos maneras de contar su trabajo.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://catunlock.github.io/mariana-landing/">
+  <meta property="og:image" content="https://catunlock.github.io/mariana-landing/assets/og/propuestas.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23EA1E2B'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23fff' text-anchor='middle'%3EMD%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: light; --bg: #F5F3EF; --ink: #1C1B19; --muted: #6b665e; --line: rgba(28,27,25,.14); --serif: "Instrument Serif", Georgia, serif; --sans: "Instrument Sans", system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.02rem/1.6 var(--sans); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; }
+    .wrap { width: min(1200px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 80px 0 40px; border-bottom: 1px solid var(--line); }
+    .kicker { margin: 0 0 14px; font: 600 .74rem var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+    h1 { margin: 0; font: 400 clamp(2.8rem, 7vw, 5.6rem)/.95 var(--serif); letter-spacing: -.02em; }
+    h1 em { color: #EA1E2B; }
+    .lead { max-width: 640px; margin: 22px 0 0; font-size: 1.15rem; color: #3b3832; }
+    .prop { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 64px); padding: 70px 0; border-bottom: 1px solid var(--line); }
+    .shots { position: relative; align-self: start; padding-bottom: 18%; }
+    .win { border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 30px 60px -30px rgba(0,0,0,.45), 0 0 0 1px rgba(0,0,0,.06); }
+    .win::before { content: ""; display: block; height: 22px; background: #ECE9E4 radial-gradient(circle, #e0605a 0 4px, transparent 4.5px) 10px 50% / 14px 14px no-repeat, radial-gradient(circle, #e8b84a 0 4px, transparent 4.5px) 24px 50% / 14px 14px no-repeat, radial-gradient(circle, #5fb35a 0 4px, transparent 4.5px) 38px 50% / 14px 14px no-repeat; background-color: #ECE9E4; }
+    .win-b { position: absolute; right: -4%; bottom: 0; width: 58%; transform: rotate(2deg); }
+    .num { font: 400 1.4rem var(--serif); color: var(--muted); }
+    .prop h2 { margin: 4px 0 6px; font: 400 clamp(2.4rem, 4.6vw, 3.8rem)/1 var(--serif); }
+    .tag { margin: 0 0 20px; font-weight: 600; color: var(--accent); }
+    .prop p { margin: 0 0 16px; }
+    .prop h3 { margin: 22px 0 8px; font: 600 .74rem var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+    .prop ul { margin: 0; padding-left: 18px; }
+    .prop li { margin-bottom: 4px; }
+    details { margin-top: 18px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+    summary { padding: 12px 16px; cursor: pointer; font-weight: 600; }
+    details ol { margin: 0; padding: 0 16px 14px 36px; }
+    details li { margin-bottom: 6px; }
+    .open { display: inline-flex; align-items: center; gap: 8px; margin-top: 24px; min-height: 50px; padding: 0 24px; border-radius: 999px; background: var(--accent); color: #fff; font-weight: 700; text-decoration: none; transition: transform .2s; }
+    .open:hover { transform: translateY(-2px); }
+    .p1 { --accent: #D2385E; } .p2 { --accent: #106253; } .p3 { --accent: #C1272D; }
+    footer { padding: 50px 0 80px; color: var(--muted); font-size: .95rem; }
+    footer h2 { margin: 0 0 10px; font: 400 2rem var(--serif); color: var(--ink); }
+    footer ul { padding-left: 18px; }
+    code { font-size: .9em; background: #ebe7e0; padding: 1px 6px; border-radius: 4px; }
+    @media (max-width: 860px) { .prop { grid-template-columns: 1fr; padding: 50px 0; } header { padding-top: 56px; } }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <p class="kicker">Mariana Díaz · Diseño gráfico · 2026</p>
+    <h1>Dos propuestas de <em>web</em></h1>
+    <p class="lead">Dos maneras de contar su trabajo, cada una con su universo, sus interacciones y sus secretos escondidos. Las dos usan sus proyectos reales, funcionan en el móvil y reciben mensajes con un formulario: ni su teléfono ni su correo personal aparecen en la web.</p>
+  </header>
+
+  <main class="wrap">
+    <article class="prop p1">
+      <div class="shots">
+        <div class="win"><img src="assets/previews/h1.webp" alt="Portada de la propuesta 1: credencial colgante y tarjeta de cristal sobre rayas rosa y lavanda" width="1200" height="750"></div>
+        <div class="win win-b"><img src="assets/previews/h1b.webp" alt="Tablero de corcho con fotos de proyectos chinchadas" width="1200" height="750" loading="lazy"></div>
+      </div>
+      <div>
+        <span class="num">01</span>
+        <h2>Un pedacito de mí</h2>
+        <p class="tag">Su identidad actual, hecha web.</p>
+        <p>Lleva a la web el universo de su portafolio: rayas rosa y lavanda, papel con grano, collage y objetos retro. La credencial se balancea (y se puede arrastrar), la máquina de escribir teclea su "sobre mí" y luego te da una hoja en blanco para escribirle, los proyectos están chinchados en un corcho que se puede reacomodar y el contacto es un teléfono de disco que se marca de verdad.</p>
+        <h3>Funciona mejor para</h3>
+        <p>Emprendimientos, marcas cercanas, belleza y alimentos: transmite personalidad desde el primer segundo y es la más fiel a su estilo.</p>
+        <h3>Lo útil</h3>
+        <ul>
+          <li>Escribirle una nota en la máquina de escribir (pulsando sus teclas con el ratón o con tu teclado, con sonido de tecla, timbre y retorno de carro) y enviársela a través del formulario.</li>
+          <li>El contacto es una postal "por avión" (formulario). Cada servicio y cada proyecto tiene un "Lo quiero" que la deja rellenada.</li>
+          <li>Ficha de proyecto con galería y paleta de colores copiable.</li>
+        </ul>
+        <details>
+          <summary>Ver los 9 secretos (spoilers)</summary>
+          <ol>
+            <li>Doble clic en la credencial: se da la vuelta y aparece un pase VIP.</li>
+            <li>Sticker "THIS IS NOT AI": sello de "hecho por una humana".</li>
+            <li>Sticker "I am just a girl with ideas": salen bombillas.</li>
+            <li>La banderita de Venezuela suelta 8 estrellas en arco.</li>
+            <li>Teclear sobre la sección "Sobre mí" o pulsar las teclas de la máquina: entra una hoja nueva y puedes escribir.</li>
+            <li>Marcar <b>1940</b> en el teléfono: modo café Flor de Patria, con vapor.</li>
+            <li>Marcar <b>2001</b>: modo Y2K con brillitos que siguen al cursor.</li>
+            <li>Chepyto se asoma por la esquina: al tocarlo hay cuenta atrás y BIG BANG (o marca 911).</li>
+            <li>Código Konami (↑↑↓↓←→←→BA) o tocar su nombre 5 veces: modo CREATIVA.</li>
+          </ol>
+        </details>
+        <a class="open" href="propuesta-1-pedacito/">Ver esta propuesta →</a>
+      </div>
+    </article>
+
+
+    <article class="prop p3">
+      <div class="shots">
+        <div class="win"><img src="assets/previews/h3.webp" alt="Portada de la propuesta 3: nombre en tipografía serif y entrada de museo rosa" width="1200" height="750" loading="lazy"></div>
+        <div class="win win-b"><img src="assets/previews/h3b.webp" alt="Pasillo del museo con obras enmarcadas y Chepyto en una vitrina" width="1200" height="750" loading="lazy"></div>
+      </div>
+      <div>
+        <span class="num">02</span>
+        <h2>Sala MD</h2>
+        <p class="tag">La más conceptual: su formación en Arte.</p>
+        <p>Una exposición individual. Rasgas la entrada y recorres un pasillo (horizontal en escritorio) de obras enmarcadas con cartelas de museo escritas con humor. Cada pieza tiene una audioguía que se escucha de verdad, Chepyto está en una vitrina con un cartel de NO TOCAR y la tienda del museo es donde se piden los servicios.</p>
+        <h3>Funciona mejor para</h3>
+        <p>Destacar su lado artístico y ser memorable: es la más fácil de compartir y de recordar.</p>
+        <h3>Lo útil</h3>
+        <ul>
+          <li>Audioguía con voz: el navegador lee la descripción de cada obra.</li>
+          <li>Tienda: eliges servicios y "pagas en caja", que deja el pedido escrito en el libro de visitas (el formulario de contacto).</li>
+          <li>Texto de sala y cronología con su formación y experiencia.</li>
+        </ul>
+        <details>
+          <summary>Ver los 7 secretos (spoilers)</summary>
+          <ol>
+            <li>El interruptor de la sala apaga la luz: con la linterna aparecen grafitis escondidos.</li>
+            <li>Tocar a Chepyto tres veces hace saltar la alarma (y el guardia se despierta).</li>
+            <li>El guardia del final está dormido… o eso parece.</li>
+            <li>Un cuadro está torcido: tócalo para enderezarlo.</li>
+            <li>Clic derecho sobre una obra o hacer una captura de pantalla: "prohibido llevarse obras".</li>
+            <li>El marco vacío "Tu marca aquí".</li>
+            <li>Konami o tocar el logo 5 veces: noche en el museo, con las obras cobrando vida.</li>
+          </ol>
+        </details>
+        <a class="open" href="propuesta-3-sala-md/">Ver esta propuesta →</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="wrap">
+    <h2>Cómo se encuentran los secretos</h2>
+    <p>Cada propuesta tiene un contador abajo en una esquina (por ejemplo, "0/9 secretos"). Al abrirlo muestra pistas de los que faltan, así nadie se queda sin descubrirlos. También hay mensajes ocultos en la consola del navegador y el título de la pestaña cambia cuando te vas.</p>
+  </footer>
+</body>
+</html>
