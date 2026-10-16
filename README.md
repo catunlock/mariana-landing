@@ -1,10 +1,15 @@
-# Web de Mariana Díaz · propuestas
+# Mariana Díaz · Diseño gráfico
 
-Dos propuestas de web para Mariana Díaz, diseñadora gráfica: **Un pedacito de mí** (`propuesta-1-pedacito/`) y **Sala MD** (`propuesta-3-sala-md/`).
+Web de Mariana Díaz, diseñadora gráfica: **<https://marianadiaz.site>**
 
-**Vista previa:** <https://catunlock.github.io/mariana-landing/>
+Es una página estática (HTML, CSS y JavaScript sin dependencias) que GitHub Pages publica directamente desde la rama `main`.
 
-Son páginas estáticas (HTML, CSS y JavaScript sin dependencias). Para verlas en local:
+- `index.html`, `styles.css`, `app.js`: la web.
+- `assets/data.js`: proyectos, textos, servicios y la configuración del formulario de contacto (Web3Forms). Todo lo que hay en este archivo es público.
+- `assets/kit.js`: utilidades compartidas (formulario, avisos, contador de secretos, sonidos).
+- `assets/img/`: imágenes de los proyectos.
+
+Para verla en local:
 
 ```bash
 python3 -m http.server 8000

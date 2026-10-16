@@ -1,6 +1,6 @@
 /*
- * Datos compartidos por las tres propuestas.
- * Si cambia un proyecto o un enlace, se cambia aquí y se actualizan las tres.
+ * Datos de la web: proyectos, textos, servicios y contacto.
+ * Si cambia un proyecto o un enlace, se cambia aquí.
  * Ojo: todo lo que esté en este archivo es público. Por eso no hay teléfono ni correo:
  * los mensajes llegan por el formulario (Web3Forms) y el correo de destino vive en esa cuenta.
  */

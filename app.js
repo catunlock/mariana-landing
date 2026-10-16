@@ -2,7 +2,7 @@
 (function () {
   const M = window.MARIANA;
   const { $, $$, reduced, toast, audio, esc } = window.Kit;
-  const IMG = "../assets/img/";
+  const IMG = "assets/img/";
   const fine = window.matchMedia("(pointer: fine)").matches;
 
   // Generador pseudoaleatorio con semilla: el tablero se ve igual en cada visita.

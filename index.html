@@ -3,142 +3,241 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Propuestas · Mariana Díaz</title>
-  <meta name="description" content="Dos propuestas de web para Mariana Díaz, diseñadora gráfica.">
-  <meta property="og:title" content="Dos propuestas de web para Mariana Díaz">
-  <meta property="og:description" content="Un pedacito de mí y Sala MD: dos maneras de contar su trabajo.">
+  <title>Mariana Díaz · Diseño gráfico</title>
+  <meta name="description" content="Mariana Díaz, diseñadora gráfica venezolana y freelance: branding, empaques, redes, mascotas 3D y diseño editorial.">
+  <meta property="og:title" content="Mariana Díaz · Diseño gráfico">
+  <meta property="og:description" content="Branding, empaques, redes, 3D y editorial. Un pedacito de mí en cada proyecto.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://marianadiaz.site/">
-  <meta property="og:image" content="https://marianadiaz.site/assets/og/propuestas.jpg">
+  <meta property="og:image" content="https://marianadiaz.site/assets/og/portada.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_VE">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="robots" content="noindex">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23EA1E2B'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23fff' text-anchor='middle'%3EMD%3C/text%3E%3C/svg%3E">
+  <link rel="canonical" href="https://marianadiaz.site/">
+  <meta name="theme-color" content="#F4C9D6">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon fill='%23EA1E2B' points='50,2 60,30 88,14 72,42 98,52 70,62 84,90 56,74 46,98 40,70 12,84 28,58 2,46 30,38 16,12 42,26'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <style>
-    :root { color-scheme: light; --bg: #F5F3EF; --ink: #1C1B19; --muted: #6b665e; --line: rgba(28,27,25,.14); --serif: "Instrument Serif", Georgia, serif; --sans: "Instrument Sans", system-ui, sans-serif; }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.02rem/1.6 var(--sans); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-    img { max-width: 100%; height: auto; display: block; }
-    a { color: inherit; }
-    .wrap { width: min(1200px, calc(100% - 32px)); margin: 0 auto; }
-    header { padding: 80px 0 40px; border-bottom: 1px solid var(--line); }
-    .kicker { margin: 0 0 14px; font: 600 .74rem var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
-    h1 { margin: 0; font: 400 clamp(2.8rem, 7vw, 5.6rem)/.95 var(--serif); letter-spacing: -.02em; }
-    h1 em { color: #EA1E2B; }
-    .lead { max-width: 640px; margin: 22px 0 0; font-size: 1.15rem; color: #3b3832; }
-    .prop { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 64px); padding: 70px 0; border-bottom: 1px solid var(--line); }
-    .shots { position: relative; align-self: start; padding-bottom: 18%; }
-    .win { border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 30px 60px -30px rgba(0,0,0,.45), 0 0 0 1px rgba(0,0,0,.06); }
-    .win::before { content: ""; display: block; height: 22px; background: #ECE9E4 radial-gradient(circle, #e0605a 0 4px, transparent 4.5px) 10px 50% / 14px 14px no-repeat, radial-gradient(circle, #e8b84a 0 4px, transparent 4.5px) 24px 50% / 14px 14px no-repeat, radial-gradient(circle, #5fb35a 0 4px, transparent 4.5px) 38px 50% / 14px 14px no-repeat; background-color: #ECE9E4; }
-    .win-b { position: absolute; right: -4%; bottom: 0; width: 58%; transform: rotate(2deg); }
-    .num { font: 400 1.4rem var(--serif); color: var(--muted); }
-    .prop h2 { margin: 4px 0 6px; font: 400 clamp(2.4rem, 4.6vw, 3.8rem)/1 var(--serif); }
-    .tag { margin: 0 0 20px; font-weight: 600; color: var(--accent); }
-    .prop p { margin: 0 0 16px; }
-    .prop h3 { margin: 22px 0 8px; font: 600 .74rem var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-    .prop ul { margin: 0; padding-left: 18px; }
-    .prop li { margin-bottom: 4px; }
-    details { margin-top: 18px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
-    summary { padding: 12px 16px; cursor: pointer; font-weight: 600; }
-    details ol { margin: 0; padding: 0 16px 14px 36px; }
-    details li { margin-bottom: 6px; }
-    .open { display: inline-flex; align-items: center; gap: 8px; margin-top: 24px; min-height: 50px; padding: 0 24px; border-radius: 999px; background: var(--accent); color: #fff; font-weight: 700; text-decoration: none; transition: transform .2s; }
-    .open:hover { transform: translateY(-2px); }
-    .p1 { --accent: #D2385E; } .p2 { --accent: #106253; } .p3 { --accent: #C1272D; }
-    footer { padding: 50px 0 80px; color: var(--muted); font-size: .95rem; }
-    footer h2 { margin: 0 0 10px; font: 400 2rem var(--serif); color: var(--ink); }
-    footer ul { padding-left: 18px; }
-    code { font-size: .9em; background: #ebe7e0; padding: 1px 6px; border-radius: 4px; }
-    @media (max-width: 860px) { .prop { grid-template-columns: 1fr; padding: 50px 0; } header { padding-top: 56px; } }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Caveat:wght@500;700&family=Courier+Prime:wght@400;700&family=Figtree:wght@300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
-  <header class="wrap">
-    <p class="kicker">Mariana Díaz · Diseño gráfico · 2026</p>
-    <h1>Dos propuestas de <em>web</em></h1>
-    <p class="lead">Dos maneras de contar su trabajo, cada una con su universo, sus interacciones y sus secretos escondidos. Las dos usan sus proyectos reales, funcionan en el móvil y reciben mensajes con un formulario: ni su teléfono ni su correo personal aparecen en la web.</p>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="wordmark" href="#inicio" id="wordmark" aria-label="Mariana Díaz, inicio"><b>Mariana</b>díaz</a>
+    <nav class="pills" aria-label="Secciones">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#tablero">Proyectos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto" class="is-cta">Contacto</a>
+    </nav>
   </header>
 
-  <main class="wrap">
-    <article class="prop p1">
-      <div class="shots">
-        <div class="win"><img src="assets/previews/h1.webp" alt="Portada de la propuesta 1: credencial colgante y tarjeta de cristal sobre rayas rosa y lavanda" width="1200" height="750"></div>
-        <div class="win win-b"><img src="assets/previews/h1b.webp" alt="Tablero de corcho con fotos de proyectos chinchadas" width="1200" height="750" loading="lazy"></div>
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="badge-slot">
+        <div class="badge-rig" id="badge">
+          <div class="strap" aria-hidden="true"><span>CREATIVA ✦ IDEAS ✦ CREATIVA ✦ IDEAS ✦ CREATIVA ✦</span></div>
+          <svg class="hook" viewBox="0 0 40 70" aria-hidden="true">
+            <defs>
+              <linearGradient id="metal" x1="0" x2="1"><stop offset="0" stop-color="#8a8f99"/><stop offset=".45" stop-color="#f4f6fa"/><stop offset="1" stop-color="#6f747d"/></linearGradient>
+            </defs>
+            <rect x="13" y="0" width="14" height="12" rx="3" fill="url(#metal)"/>
+            <path d="M20 12 v8 M20 20 c-10 0 -12 10 -12 18 c0 14 6 24 12 24 c6 0 12 -10 12 -24 c0 -8 -2 -18 -12 -18" fill="none" stroke="url(#metal)" stroke-width="5"/>
+            <circle cx="20" cy="64" r="5" fill="none" stroke="url(#metal)" stroke-width="4"/>
+          </svg>
+          <div class="badge" tabindex="0" role="button" aria-label="Credencial de Mariana Díaz. Haz doble clic para darle la vuelta.">
+            <div class="badge-inner">
+              <div class="badge-face badge-front">
+                <span class="badge-slit" aria-hidden="true"></span>
+                <div class="badge-photo"><img src="assets/img/retrato.webp" alt="Mariana Díaz sonriendo, con lentes y la mano bajo el mentón" width="792" height="919"></div>
+                <p class="badge-name">Mariana Díaz</p>
+                <p class="badge-meta"><span>Venezuela</span><span>Freelance</span></p>
+              </div>
+              <div class="badge-face badge-back" aria-hidden="true">
+                <span class="badge-slit"></span>
+                <p class="vip">PASE VIP</p>
+                <p class="vip-sub">Acceso total al lugar donde nacen las ideas</p>
+                <ul>
+                  <li>✦ Backstage creativo</li>
+                  <li>✦ 1 café ☕</li>
+                  <li>✦ 1 proyecto increíble</li>
+                </ul>
+                <div class="barcode"></div>
+                <p class="vip-foot">Nº 0001 · no transferible</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <span class="num">01</span>
-        <h2>Un pedacito de mí</h2>
-        <p class="tag">Su identidad actual, hecha web.</p>
-        <p>Lleva a la web el universo de su portafolio: rayas rosa y lavanda, papel con grano, collage y objetos retro. La credencial se balancea (y se puede arrastrar), la máquina de escribir teclea su "sobre mí" y luego te da una hoja en blanco para escribirle, los proyectos están chinchados en un corcho que se puede reacomodar y el contacto es un teléfono de disco que se marca de verdad.</p>
-        <h3>Funciona mejor para</h3>
-        <p>Emprendimientos, marcas cercanas, belleza y alimentos: transmite personalidad desde el primer segundo y es la más fiel a su estilo.</p>
-        <h3>Lo útil</h3>
-        <ul>
-          <li>Escribirle una nota en la máquina de escribir (pulsando sus teclas con el ratón o con tu teclado, con sonido de tecla, timbre y retorno de carro) y enviársela a través del formulario.</li>
-          <li>El contacto es una postal "por avión" (formulario). Cada servicio y cada proyecto tiene un "Lo quiero" que la deja rellenada.</li>
-          <li>Ficha de proyecto con galería y paleta de colores copiable.</li>
-        </ul>
-        <details>
-          <summary>Ver los 9 secretos (spoilers)</summary>
-          <ol>
-            <li>Doble clic en la credencial: se da la vuelta y aparece un pase VIP.</li>
-            <li>Sticker "THIS IS NOT AI": sello de "hecho por una humana".</li>
-            <li>Sticker "I am just a girl with ideas": salen bombillas.</li>
-            <li>La banderita de Venezuela suelta 8 estrellas en arco.</li>
-            <li>Teclear sobre la sección "Sobre mí" o pulsar las teclas de la máquina: entra una hoja nueva y puedes escribir.</li>
-            <li>Marcar <b>1940</b> en el teléfono: modo café Flor de Patria, con vapor.</li>
-            <li>Marcar <b>2001</b>: modo Y2K con brillitos que siguen al cursor.</li>
-            <li>Chepyto se asoma por la esquina: al tocarlo hay cuenta atrás y BIG BANG (o marca 911).</li>
-            <li>Código Konami (↑↑↓↓←→←→BA) o tocar su nombre 5 veces: modo CREATIVA.</li>
-          </ol>
-        </details>
-        <a class="open" href="propuesta-1-pedacito/">Ver esta propuesta →</a>
-      </div>
-    </article>
 
+      <div class="hero-main">
+        <div class="glass">
+          <p class="big-word" aria-hidden="true">PORTA<svg class="f-loop" viewBox="0 0 130 250" aria-hidden="true"><path pathLength="1" d="M10 148 C 34 146 58 138 70 118 C 86 92 98 40 84 18 C 70 -4 44 14 46 52 C 48 92 56 150 58 196 C 60 232 36 244 26 226 C 14 204 48 178 76 166 C 96 158 116 160 122 172"/></svg>OLIO</p>
+          <div class="glass-row">
+            <h1><b>Mariana</b>díaz</h1>
+            <span class="year">2026</span>
+          </div>
+          <button class="sticker-burst" type="button" id="agenda" aria-label="Agenda abierta: ir a contacto">
+            <svg viewBox="-100 -100 200 200" aria-hidden="true"><polygon class="burst-shadow"/><polygon class="burst"/></svg>
+            <span>¡Agenda<br>abierta!</span>
+          </button>
+        </div>
+        <p class="hero-kicker">DISEÑO GRÁFICO</p>
+        <p class="hero-sub">Branding, empaques, redes, mascotas 3D y editorial.<br>Cada proyecto lleva <em>un pedacito de mí</em>.</p>
+        <div class="hero-cta">
+          <a class="btn btn-solid" href="#tablero">Ver mi tablero</a>
+          <a class="btn btn-line" href="#contacto">¡Trabajemos juntos!</a>
+        </div>
+      </div>
+      <p class="scroll-hint" aria-hidden="true">desliza ↓</p>
+    </section>
 
-    <article class="prop p3">
-      <div class="shots">
-        <div class="win"><img src="assets/previews/h3.webp" alt="Portada de la propuesta 3: nombre en tipografía serif y entrada de museo rosa" width="1200" height="750" loading="lazy"></div>
-        <div class="win win-b"><img src="assets/previews/h3b.webp" alt="Pasillo del museo con obras enmarcadas y Chepyto en una vitrina" width="1200" height="750" loading="lazy"></div>
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="about" id="sobre-mi" aria-labelledby="t-sobre">
+      <h2 class="dymo" id="t-sobre">Sobre mí</h2>
+      <div class="about-grid">
+        <div class="typewriter" id="typewriter">
+          <div class="paper-stack" id="paper-stack">
+            <article class="paper" id="paper-about" aria-live="off"></article>
+            <article class="paper paper-note" id="paper-note" aria-hidden="true">
+              <p class="note-body" id="note-body"></p>
+            </article>
+          </div>
+          <!-- Las teclas son botones para el ratón; el texto accesible entra por el textarea de abajo. -->
+          <div class="machine" id="machine" aria-hidden="true">
+            <div class="carriage">
+              <div class="roller"><button type="button" class="lever" data-k="Enter" tabindex="-1" title="Retorno de carro"></button><i></i><i></i></div>
+            </div>
+            <div class="machine-body">
+              <span class="plate">MD·2026</span>
+              <div class="keys" id="keys"></div>
+              <button type="button" class="spacebar" data-k=" " tabindex="-1"></button>
+            </div>
+          </div>
+          <textarea id="note-input" class="sr-only" aria-label="Escribe una nota para Mariana" maxlength="600"></textarea>
+          <div class="note-actions" id="note-actions">
+            <button type="button" class="btn btn-line btn-sm" id="note-start">📄 Escríbele una nota</button>
+            <div class="note-send" hidden>
+              <button type="button" class="btn btn-solid btn-sm" id="note-send">Enviar a Mariana ✉</button>
+              <button type="button" class="btn btn-ghost btn-sm" id="note-new">Hoja nueva</button>
+              <button type="button" class="btn btn-ghost btn-sm" id="note-cancel">Volver</button>
+            </div>
+            <button type="button" class="btn btn-ghost btn-sm sound-toggle" id="sound-toggle" aria-pressed="true">🔊 Sonido</button>
+          </div>
+        </div>
+
+        <aside class="about-side">
+          <div class="sticky-note">
+            <span class="tack" aria-hidden="true"></span>
+            <h3>Software</h3>
+            <ul class="checks" id="software"></ul>
+          </div>
+          <p class="hand-hint">psst… esta máquina funciona.<br>Pulsa sus teclas o escribe con tu teclado ↙</p>
+        </aside>
       </div>
-      <div>
-        <span class="num">02</span>
-        <h2>Sala MD</h2>
-        <p class="tag">La más conceptual: su formación en Arte.</p>
-        <p>Una exposición individual. Rasgas la entrada y recorres un pasillo (horizontal en escritorio) de obras enmarcadas con cartelas de museo escritas con humor. Cada pieza tiene una audioguía que se escucha de verdad, Chepyto está en una vitrina con un cartel de NO TOCAR y la tienda del museo es donde se piden los servicios.</p>
-        <h3>Funciona mejor para</h3>
-        <p>Destacar su lado artístico y ser memorable: es la más fácil de compartir y de recordar.</p>
-        <h3>Lo útil</h3>
-        <ul>
-          <li>Audioguía con voz: el navegador lee la descripción de cada obra.</li>
-          <li>Tienda: eliges servicios y "pagas en caja", que deja el pedido escrito en el libro de visitas (el formulario de contacto).</li>
-          <li>Texto de sala y cronología con su formación y experiencia.</li>
-        </ul>
-        <details>
-          <summary>Ver los 7 secretos (spoilers)</summary>
-          <ol>
-            <li>El interruptor de la sala apaga la luz: con la linterna aparecen grafitis escondidos.</li>
-            <li>Tocar a Chepyto tres veces hace saltar la alarma (y el guardia se despierta).</li>
-            <li>El guardia del final está dormido… o eso parece.</li>
-            <li>Un cuadro está torcido: tócalo para enderezarlo.</li>
-            <li>Clic derecho sobre una obra o hacer una captura de pantalla: "prohibido llevarse obras".</li>
-            <li>El marco vacío "Tu marca aquí".</li>
-            <li>Konami o tocar el logo 5 veces: noche en el museo, con las obras cobrando vida.</li>
-          </ol>
-        </details>
-        <a class="open" href="propuesta-3-sala-md/">Ver esta propuesta →</a>
+    </section>
+
+    <!-- ============ TABLERO ============ -->
+    <section class="board-section" id="tablero" aria-labelledby="t-tablero">
+      <h2 class="dymo dymo-red" id="t-tablero">Mi tablero de proyectos</h2>
+      <div class="pills filters" role="toolbar" aria-label="Filtrar proyectos" id="filters"></div>
+      <div class="board-frame">
+        <div class="board" id="board">
+          <button type="button" class="flag-pin" id="flag" aria-label="Banderita de Venezuela">
+            <span class="flag"><i></i><i><b></b></i><i></i></span><span class="flag-stick"></span>
+          </button>
+          <button type="button" class="sticker sticker-ai" id="sticker-ai" aria-label="Sticker: This is not AI">
+            <span>“THIS IS<br>NOT</span><span class="ai">AI”</span>
+          </button>
+          <button type="button" class="sticker sticker-idea" id="sticker-idea" aria-label="Sticker: I am just a girl with ideas">
+            I AM<br>JUST A GIRL<br>WITH <span>IDEAS</span>
+          </button>
+        </div>
       </div>
-    </article>
+      <p class="board-tip">Toca una foto para abrir el proyecto<span class="only-fine"> · arrástrala para reacomodar el tablero</span></p>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="services" id="servicios" aria-labelledby="t-serv">
+      <h2 class="dymo" id="t-serv">¿En qué te ayudo?</h2>
+      <div class="postits" id="postits"></div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="contact" id="contacto" aria-labelledby="t-contacto">
+      <h2 class="contact-title" id="t-contacto">Gr<span>a</span>cias<span class="bang">!</span></h2>
+      <div class="contact-grid">
+        <div class="dial-wrap">
+          <div class="dial-display" aria-live="polite"><span id="dial-digits">marca un número…</span></div>
+          <svg class="dial" id="dial" viewBox="0 0 400 400" role="group" aria-label="Teléfono de disco: toca un número para marcarlo">
+            <defs>
+              <radialGradient id="plate" cx=".4" cy=".35" r=".8">
+                <stop offset="0" stop-color="#d9dbe0"/><stop offset=".6" stop-color="#9ea2aa"/><stop offset="1" stop-color="#6c7078"/>
+              </radialGradient>
+              <linearGradient id="wheel" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#eef0f3"/><stop offset=".5" stop-color="#b5b9c0"/><stop offset="1" stop-color="#7d828a"/>
+              </linearGradient>
+              <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity=".28"/></filter>
+            </defs>
+            <circle cx="200" cy="200" r="196" fill="url(#plate)" filter="url(#soft)"/>
+            <g id="dial-numbers"></g>
+            <g id="dial-wheel"><path id="wheel-path" fill="url(#wheel)" fill-rule="evenodd" stroke="#6c7078" stroke-width="1.5"/></g>
+            <g class="dial-center">
+              <circle cx="200" cy="200" r="92" fill="#ECE6DA" stroke="#9ea2aa" stroke-width="4"/>
+              <text x="200" y="176" class="dc-title">¡TRABAJEMOS</text>
+              <text x="200" y="202" class="dc-title">JUNTOS!</text>
+              <text x="200" y="226" class="dc-line">Sin llamadas:</text>
+              <text x="200" y="246" class="dc-line">escríbeme una postal</text>
+            </g>
+            <path class="finger-stop" d="M 336 262 q 22 10 34 30 q 4 8 -4 10 q -20 -10 -38 -28 z"/>
+          </svg>
+          <p class="dial-hint">Toca los números para marcar. Algunos esconden sorpresas.</p>
+        </div>
+        <div class="contact-links">
+          <p class="contact-lead">¿Tienes una marca, un producto o una idea que necesita forma? Mándame una postal y te respondo.</p>
+          <!-- Formulario de contacto: lo envía Web3Forms (la clave está en assets/data.js) -->
+          <form class="postcard" id="contact-form">
+            <span class="stamp" aria-hidden="true"><b>MD</b><small>Correo aéreo</small></span>
+            <label class="pc-field"><span>Tu nombre</span><input name="name" required maxlength="80" autocomplete="name"></label>
+            <label class="pc-field"><span>Tu correo</span><input name="email" type="email" required maxlength="120" autocomplete="email"></label>
+            <label class="pc-field"><span>¿Qué necesitas?</span><select name="servicio"><option value="">Elige una opción</option></select></label>
+            <label class="pc-field"><span>Tu mensaje</span><textarea name="message" rows="4" required maxlength="2000"></textarea></label>
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="pc-foot">
+              <button type="submit" class="btn btn-solid">Enviar postal ✉</button>
+              <p class="form-status" data-status role="status" aria-live="polite"></p>
+            </div>
+            <p class="pc-note">Tus datos solo se usan para responderte.</p>
+            <p class="form-alt" data-email-alt hidden></p>
+          </form>
+          <a class="clink" id="c-be" href="#" target="_blank" rel="noopener"><span class="clink-k">Behance</span><span class="clink-v">Mariana Díaz</span></a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="wrap">
-    <h2>Cómo se encuentran los secretos</h2>
-    <p>Cada propuesta tiene un contador abajo en una esquina (por ejemplo, "0/9 secretos"). Al abrirlo muestra pistas de los que faltan, así nadie se queda sin descubrirlos. También hay mensajes ocultos en la consola del navegador y el título de la pestaña cambia cuando te vas.</p>
+  <footer class="foot">
+    <p>© 2026 Mariana Díaz · Diseño gráfico · Venezuela → el mundo</p>
+    <p class="foot-small">Esta página tiene secretos. El contador de abajo a la derecha te ayuda a encontrarlos.</p>
   </footer>
+
+  <!-- Chepyto se asoma… -->
+  <button type="button" class="chepyto" id="chepyto" aria-label="Chepyto, la mascota 3D, se asoma. Tócalo si te atreves.">
+    <img src="assets/img/chepyto-cabeza.webp" alt="" width="520" height="520">
+    <span class="spark" aria-hidden="true"></span>
+  </button>
+  <div class="boom-layer" id="boom" aria-hidden="true"></div>
+
+  <dialog class="folder" id="folder" aria-labelledby="f-title">
+    <div class="folder-inner" id="folder-inner"></div>
+  </dialog>
+
+  <script src="assets/data.js?v=11"></script>
+  <script src="assets/kit.js?v=11"></script>
+  <script src="app.js?v=11"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 /*
- * Utilidades compartidas por las tres propuestas: avisos (toast), contador de
+ * Utilidades de la web: formulario de contacto, avisos (toast), contador de
  * secretos, código Konami, título de pestaña y pequeños sonidos con WebAudio.
- * Cada propuesta les da su propio estilo desde su CSS (.toast, .eggs-*).
+ * El estilo de cada pieza (.toast, .eggs-*) está en styles.css.
  */
 (function () {
   const $ = (sel, root = document) => root.querySelector(sel);
