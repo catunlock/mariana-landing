@@ -19,7 +19,7 @@ window.MARIANA = {
   contacto: {
     // Clave de acceso de Web3Forms (https://web3forms.com): se crea gratis con el correo de Mariana
     // y es la que decide a qué correo llegan los mensajes. Es pública por diseño; pégala aquí.
-    web3formsKey: "",
+    web3formsKey: "d58eb48d-6c06-4eb7-882d-31f00cb171e6",
     // Correo profesional del dominio propio (p. ej. "hola@marianadiaz.design"). Si se rellena, aparece
     // como alternativa bajo el formulario. No poner aquí correos personales (Gmail, etc.).
     emailPublico: "hola@marianadiaz.site",
